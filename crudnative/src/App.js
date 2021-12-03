@@ -18,3 +18,5 @@ export default props => {
     </NavigationContainer>
   );
 };
+
+const screenOptions = {};
