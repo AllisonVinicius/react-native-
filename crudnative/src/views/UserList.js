@@ -5,11 +5,11 @@ import users from '../data/users';
 
 export default props => {
   function confirmUserDeletion(user) {
-    Alert.alert('Excluir Usuário', 'Deseja Excluir o usuario', [
+    Alert.alert('Excluir Usuário', 'Deseja Excluir o usuario?', [
       {
         text: 'Sim',
         onPress() {
-          console.warn('delete');
+          console.warn('delete' + user.id);
         },
       },
       {
@@ -44,7 +44,7 @@ export default props => {
         subtitle={user.email}
         bottomDivider
         rightElement={getActions(user)}
-        onPress={() => props.navigation.navigate('UserForm')}
+        onPress={() => props.navigation.navigate('UserForm', user)}
       />
     );
   }
