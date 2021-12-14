@@ -17,7 +17,7 @@ export default props => {
       },
     ]);
   }
-
+  /**button edit and delete user */
   function getActions(user) {
     return (
       <>
@@ -34,7 +34,7 @@ export default props => {
       </>
     );
   }
-
+  /** function list user  */
   function getUserItem({item: user}) {
     return (
       <ListItem
